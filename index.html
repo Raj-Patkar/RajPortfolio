@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raj Patkar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Playfair+Display&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <!-- Sliding transition overlay -->
+
+
+
+<header>
+  <nav>
+    <div class="logo">Raj Portfolio</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <div class="main-content">
+      <div class="text-section">
+        
+
+    <h1 id="animated-heading">
+  <span>Welcome</span> <span>  to</span> <span>  my</span><br><span>    portfolio</span>
+</h1>
+
+    
+
+  
+  <section class="intro-paragraph">
+<p>
+  Hi, I'm <strong>Raj Patkar</strong> — a <strong>Full Stack Learner</strong> with a strong focus on <strong>front-end development</strong> and a solid grasp of <strong>back-end fundamentals</strong>.
+  I’m passionate about building <strong>clean</strong>, <strong>functional</strong>, and <strong>impactful digital experiences</strong>.
+  My expertise lies in crafting intuitive user interfaces while ensuring seamless integration with robust back-end systems.
+  This portfolio is a glimpse into the <strong>projects</strong> I've built, refined, and grown with — showcasing my journey as a developer.
+  <br><br>
+  <em><strong>"Crafting code with purpose, designing solutions with precision."</strong></em>
+</p>
+
+</section>
+</div>
+
+
+<div class="model-section">
+  <img src="models/profRAJ.png" alt="Raj Patkar" class="raj-image"/>
+</div>
+
+
+
+    <section class="dynamic-sections">
+  <div class="card dynamic-card experience">
+    <div class="card-content">
+      <h2>Experience</h2>
+      <p>Explore my journey, internships, and professional roles.</p>
+
+      <a href="experience.html">
+        <button class="viewmore">
+          <span>View More</span>
+        </button>
+      </a>         
+    </div>
+  </div>
+
+  <div class="card dynamic-card projects">
+    <div class="card-content">
+      <h2>Projects</h2>
+      <p>See the projects I've built .</p>
+
+
+      <a href="projects.html">
+        <button class="viewmore">
+          <span>View More</span>
+        </button>
+      </a>      
+    </div>
+  </div>
+
+  <div class="card dynamic-card skills">
+    <div class="card-content">
+      <h2>Skills</h2>
+      <p>Browse through the tools, tech stacks, and languages I love working with.</p>
+      
+      <a href="skills.html">
+        <button class="viewmore">
+          <span>View More</span>
+        </button>
+      </a>   
+    </div>
+  </div>
+</section>
+
+<section class="leetcode-section">
+  <h2 class="leetcode-heading">Checkout My LeetCode Live Stats</h2>
+  <p>I'm actively solving algorithmic challenges to sharpen my coding skills.</p>
+
+  <div class="leetcode-flex-container">
+    <!-- LeetCode Stats -->
+    <div class="leetcode-stats-container">
+      <img
+        src="https://leetcard.jacoblin.cool/RajPatkar?theme=dark&font=baloo"
+        alt="LeetCode Stats"
+      />
+      <a href="https://leetcode.com/RajPatkar" target="_blank" rel="noopener" class="profile-btn">Checkout Profile</a>
+    </div>
+
+    <!-- Badges Section -->
+    <div class="badge-container">
+      <h3 class="badge-heading">My Current Badges</h3>
+      <div class="scrolling-badges">
+        <div class="badge-track">
+          <img src="models/badge1.png" alt="Badge 1" />
+          <img src="models/badge2.png" alt="Badge 2" />
+          <img src="models/badge3.png" alt="Badge 3" />
+          <img src="models/badge4.png" alt="Badge 4" />
+          <!-- Repeat badges for smooth scrolling -->
+          <img src="models/badge1.png" alt="Badge 1" />
+          <img src="models/badge2.png" alt="Badge 2" />
+          <img src="models/badge3.png" alt="Badge 3" />
+          <img src="models/badge4.png" alt="Badge 4" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </main>
+  <div class="transition-overlay" id="transitionOverlay">
+  <div class="custom-loader"></div>
+</div>
+
+  <section class="resume-download">
+  <h2>Download My Resume</h2>
+
+<a href="models/resume2025.pdf" download>
+  <button class="button-resume">
+    <span class="button-content">Download</span>
+  </button>
+</a>
+
+
+
+
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <p class="footer-text">Connect with me</p>
+    <div class="social-icons">
+      <a href="https://github.com/Raj-Patkar" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/raj-patkar-10413b2aa/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:raj5patkar@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Raj Patkar</p>
+  </div>
+</footer>
+
+
+
+  <script type="module" src="main.js"></script>
+  <script>
+  const h1 = document.getElementById("animated-heading");
+  const text = h1.textContent;
+  h1.innerHTML = [...text].map(char => `<span>${char}</span>`).join('');
+
+  const spans = h1.querySelectorAll("span");
+
+  spans.forEach((span, i) => {
+    span.addEventListener("mouseenter", () => {
+      spans.forEach(s => s.classList.remove("hover-main", "hover-side"));
+      span.classList.add("hover-main");
+      if (spans[i - 1]) spans[i - 1].classList.add("hover-side");
+      if (spans[i + 1]) spans[i + 1].classList.add("hover-side");
+    });
+
+    span.addEventListener("mouseleave", () => {
+      spans.forEach(s => s.classList.remove("hover-main", "hover-side"));
+    });
+  });
+
+
+    const cards = document.querySelectorAll(".dynamic-card");
+  let floatOffset = 0;
+
+  function animateCards() {
+    floatOffset += 0.03;
+    cards.forEach((card, i) => {
+      const offset = Math.sin(floatOffset + i) * 17;
+      card.style.transform = `translateY(${offset}px)`;
+    });
+    requestAnimationFrame(animateCards);
+  }
+
+  animateCards();
+
+  const overlay = document.getElementById('transitionOverlay');
+  const viewMoreBtns = document.querySelectorAll('.viewmore');
+  
+  viewMoreBtns.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      overlay.classList.add('active');
+      const href = this.parentElement.getAttribute('href');
+      setTimeout(() => {
+        window.location.href = href;
+      }, 1300); // allow time for overlay + spinner
+    });
+  });
+
+
+  
+  
+  function toggleMenu() {
+    const navMenu = document.getElementById("nav-menu");
+    navMenu.classList.toggle("active");
+  }
+
+
+
+    const root = document.documentElement;
+
+  let r1 = 0, g1 = 255, b1 = 100;
+  let r2 = 255, g2 = 230, b2 = 100;
+
+  let step = 0;
+
+  function updateColors() {
+    // Smoothly oscillate RGB values using sine wave
+    step += 0.02;
+
+    r1 = Math.round(128 + 127 * Math.sin(step));
+    g1 = Math.round(128 + 127 * Math.sin(step + 2));
+    b1 = Math.round(128 + 127 * Math.sin(step + 4));
+
+    r2 = Math.round(128 + 127 * Math.sin(step + 1));
+    g2 = Math.round(128 + 127 * Math.sin(step + 3));
+    b2 = Math.round(128 + 127 * Math.sin(step + 5));
+
+    root.style.setProperty('--color1', `${r1}, ${g1}, ${b1}`);
+    root.style.setProperty('--color2', `${r2}, ${g2}, ${b2}`);
+
+    requestAnimationFrame(updateColors);
+  }
+
+  updateColors();
+
+</script>
+
+
+
+</body>
+
+</html>

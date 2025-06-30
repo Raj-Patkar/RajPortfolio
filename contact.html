@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Raj Patkar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+  @media (max-width: 480px) {
+    form.dynamic-card {
+      max-width: 90% !important;
+      padding: 10px !important;
+    }
+
+    form.dynamic-card input,
+    form.dynamic-card textarea {
+      padding: 8px !important;
+    }
+
+    form.dynamic-card button.btn {
+      width: 100% !important;
+      padding: 12px !important;
+    }
+  }
+element.style {
+
+    margin: 8px -10px;
+
+}
+  
+</style>
+
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Raj Portfolio</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="experience-section">
+  
+  <h1 class="experience-title">Contact Me</h1>
+  
+  <form action="https://formspree.io/f/movwlkzy" method="POST" class="dynamic-card" style="max-width: 500px; width: 100%;">
+    <div class="card-content">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin: 10px -7px; border-radius: 8px; border: 1px solid #ccc;"><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin: 10px -7px; border-radius: 8px; border: 1px solid #ccc;"><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; margin: 10px -7px; border-radius: 8px; border: 1px solid #ccc;"></textarea><br>
+
+      <button type="submit" class="btn">Send Message</button>
+    </div>
+    
+  </form>
+  
+</main>
+
+
+
+
+<script>
+  function toggleMenu() {
+    const navMenu = document.getElementById("nav-menu");
+    navMenu.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
