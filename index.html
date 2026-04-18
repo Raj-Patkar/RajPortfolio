@@ -1,315 +1,350 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Raj Patkar | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Playfair+Display&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raj Patkar | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <!-- Syne (display) + DM Sans (body) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-</head>
-<body>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-  <!-- Sliding transition overlay -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <header id="site-header">
+      <nav>
+        <div class="logo">Raj Portfolio</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <!-- ── Hero ─────────────────────────────── -->
+      <div class="main-content">
+        <div class="text-section">
+          <h1 id="animated-heading">
+            Welcome to          my <br />
+            portfolio
+          </h1>
 
+          <section class="intro-paragraph">
+            <p>
+              Hi, I'm <strong>Raj Patkar</strong> — a
+              <strong>Full Stack Learner</strong> with a strong focus on
+              <strong>front-end development</strong> and a solid grasp of
+              <strong>back-end fundamentals</strong>. I'm passionate about
+              building <strong>clean</strong>, <strong>functional</strong>, and
+              <strong>impactful digital experiences</strong>. My expertise lies
+              in crafting intuitive user interfaces while ensuring seamless
+              integration with robust back-end systems. This portfolio is a
+              glimpse into the <strong>projects</strong> I've built, refined,
+              and grown with. <br /><br />
+              <em
+                ><strong
+                  >"Crafting code with purpose, designing solutions with
+                  precision."</strong
+                ></em
+              >
+            </p>
+          </section>
+        </div>
 
-<header>
-  <nav>
-    <div class="logo">Raj Portfolio</div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <ul id="nav-menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-
-  <main>
-    <div class="main-content">
-      <div class="text-section">
-        
-
-    <h1 id="animated-heading">
-  <span>Welcome</span> <span>  to</span> <span>  my</span><br><span>    portfolio</span>
-</h1>
-
-    
-
-  
-  <section class="intro-paragraph">
-<p>
-  Hi, I'm <strong>Raj Patkar</strong> — a <strong>Full Stack Learner</strong> with a strong focus on <strong>front-end development</strong> and a solid grasp of <strong>back-end fundamentals</strong>.
-  I’m passionate about building <strong>clean</strong>, <strong>functional</strong>, and <strong>impactful digital experiences</strong>.
-  My expertise lies in crafting intuitive user interfaces while ensuring seamless integration with robust back-end systems.
-  This portfolio is a glimpse into the <strong>projects</strong> I've built, refined, and grown with — showcasing my journey as a developer.
-  <br><br>
-  <em><strong>"Crafting code with purpose, designing solutions with precision."</strong></em>
-</p>
-
-</section>
-</div>
-
-
-<div class="model-section">
-  <img src="models/profRAJ.png" alt="Raj Patkar" class="raj-image"/>
-</div>
-
-
-
-    <section class="dynamic-sections">
-  <div class="card dynamic-card experience">
-    <div class="card-content">
-      <h2>Experience</h2>
-      <p>Explore my journey, internships, and professional roles.</p>
-
-      <a href="experience.html">
-        <button class="viewmore">
-          <span>View More</span>
-        </button>
-      </a>         
-    </div>
-  </div>
-
-  <div class="card dynamic-card projects">
-    <div class="card-content">
-      <h2>Projects</h2>
-      <p>See the projects I've built .</p>
-
-
-      <a href="projects.html">
-        <button class="viewmore">
-          <span>View More</span>
-        </button>
-      </a>      
-    </div>
-  </div>
-
-  <div class="card dynamic-card skills">
-    <div class="card-content">
-      <h2>Skills</h2>
-      <p>Browse through the tools, tech stacks, and languages I love working with.</p>
-      
-      <a href="skills.html">
-        <button class="viewmore">
-          <span>View More</span>
-        </button>
-      </a>   
-    </div>
-  </div>
-</section>
-
-<section class="leetcode-section">
-  <h2 class="leetcode-heading">Checkout My LeetCode Live Stats</h2>
-  <p>I'm actively solving algorithmic challenges to sharpen my coding skills.</p>
-
-  <div class="leetcode-flex-container">
-    <!-- LeetCode Stats -->
-    <div class="leetcode-stats-container">
-      <img
-        src="https://leetcard.jacoblin.cool/RajPatkar?theme=dark&font=baloo"
-        alt="LeetCode Stats"
-      />
-      <a href="https://leetcode.com/RajPatkar" target="_blank" rel="noopener" class="profile-btn">Checkout Profile</a>
-    </div>
-
-    <!-- Badges Section -->
-    <div class="badge-container">
-      <h3 class="badge-heading">My Current Badges</h3>
-      <div class="scrolling-badges">
-        <div class="badge-track">
-          <img src="models/badge1.png" alt="Badge 1" />
-          <img src="models/badge2.png" alt="Badge 2" />
-          <img src="models/badge3.png" alt="Badge 3" />
-          <img src="models/badge4.png" alt="Badge 4" />
-          <!-- Repeat badges for smooth scrolling -->
-          <img src="models/badge1.png" alt="Badge 1" />
-          <img src="models/badge2.png" alt="Badge 2" />
-          <img src="models/badge3.png" alt="Badge 3" />
-          <img src="models/badge4.png" alt="Badge 4" />
+        <div class="model-section">
+          <img src="models/profRAJ.png" alt="Raj Patkar" class="raj-image" />
         </div>
       </div>
+
+      <!-- ── Nav Cards ─────────────────────────── -->
+      <section class="dynamic-sections">
+        <div class="card dynamic-card experience reveal">
+          <div class="card-content">
+            <h2>Experience</h2>
+            <p>Explore my journey, internships, and professional roles.</p>
+            <a href="experience.html">
+              <button class="viewmore"><span>View More</span></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card dynamic-card projects reveal">
+          <div class="card-content">
+            <h2>Projects</h2>
+            <p>See the projects I've built.</p>
+            <a href="projects.html">
+              <button class="viewmore"><span>View More</span></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card dynamic-card skills reveal">
+          <div class="card-content">
+            <h2>Skills</h2>
+            <p>
+              Browse through the tools, tech stacks, and languages I love
+              working with.
+            </p>
+            <a href="skills.html">
+              <button class="viewmore"><span>View More</span></button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── LeetCode ───────────────────────────── -->
+      <section class="leetcode-section reveal">
+        <h2 class="leetcode-heading">Checkout My LeetCode Live Stats</h2>
+        <p>
+          I'm actively solving algorithmic challenges to sharpen my coding
+          skills.
+        </p>
+
+        <div class="leetcode-flex-container">
+          <div class="leetcode-stats-container">
+            <img
+              src="https://leetcard.jacoblin.cool/RajPatkar?theme=dark&font=baloo"
+              alt="LeetCode Stats"
+            />
+            <a
+              href="https://leetcode.com/RajPatkar"
+              target="_blank"
+              rel="noopener"
+              class="profile-btn"
+            >
+              Checkout Profile
+            </a>
+          </div>
+
+          <div class="badge-container">
+            <h3 class="badge-heading">My Current Badges</h3>
+            <div class="scrolling-badges">
+              <div class="badge-track">
+                <img src="models/badge1.png" alt="Badge 1" />
+                <img src="models/badge2.png" alt="Badge 2" />
+                <img src="models/badge3.png" alt="Badge 3" />
+                <img src="models/badge4.png" alt="Badge 4" />
+                <img src="models/badge1.png" alt="Badge 1" />
+                <img src="models/badge2.png" alt="Badge 2" />
+                <img src="models/badge3.png" alt="Badge 3" />
+                <img src="models/badge4.png" alt="Badge 4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Transition overlay -->
+    <div class="transition-overlay" id="transitionOverlay">
+      <div class="custom-loader"></div>
     </div>
-  </div>
-</section>
 
-
-
-
-
-
-  </main>
-  <div class="transition-overlay" id="transitionOverlay">
-  <div class="custom-loader"></div>
-</div>
-
-  <section class="resume-download">
-  <h2>Download My Resume</h2>
-
-<a href="models/Raj_Resume (2).pdf" target="_blank" rel="noopener">
-
-  <button class="button-resume">
-    <span class="button-content">Download</span>
-  </button>
-</a>
-
-
-
-
-</section>
-
-
-
-
-<footer class="footer">
-  <div class="footer-container">
-    <p class="footer-text">Connect with me</p>
-    <div class="social-icons">
-      <a href="https://github.com/Raj-Patkar" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
+    <!-- ── Resume ─────────────────────────────── -->
+    <section class="resume-download reveal">
+      <h2>Download My Resume</h2>
+      <a href="models/Raj_Resume (2).pdf" target="_blank" rel="noopener">
+        <button class="button-resume">
+          <i class="fas fa-download"></i>
+          <span class="button-content">Download</span>
+        </button>
       </a>
-      <a href="https://www.linkedin.com/in/raj-patkar-10413b2aa/" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="mailto:raj5patkar@gmail.com" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </div>
-    <p class="footer-copy">&copy; 2025 Raj Patkar</p>
-  </div>
-</footer>
+    </section>
 
+    <!-- ── Footer ─────────────────────────────── -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-text">Connect with me</p>
+        <div class="social-icons">
+          <a
+            href="https://github.com/Raj-Patkar"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/raj-patkar-10413b2aa/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:raj5patkar@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Raj Patkar</p>
+      </div>
+    </footer>
 
+    <script type="module" src="main.js"></script>
+    <script>
+      /* ── Animated Heading ── */
+      function initAnimatedHeading() {
+        const h1 = document.getElementById("animated-heading");
+        if (!h1) return;
 
-  <script type="module" src="main.js"></script>
-<script>
-  // ===== Animated Heading =====
-  function initAnimatedHeading() {
-    const h1 = document.getElementById("animated-heading");
-    if (!h1) return;
-    const text = h1.textContent;
-    h1.innerHTML = [...text].map(char => `<span>${char}</span>`).join('');
+        const text = h1.innerHTML;
 
-    const spans = h1.querySelectorAll("span");
+        // Preserve <br> and split words properly
+        const parts = text.split(/(<br\s*\/?>)/gi);
 
-    spans.forEach((span, i) => {
-      span.addEventListener("mouseenter", () => {
-        spans.forEach(s => s.classList.remove("hover-main", "hover-side"));
-        span.classList.add("hover-main");
-        if (spans[i - 1]) spans[i - 1].classList.add("hover-side");
-        if (spans[i + 1]) spans[i + 1].classList.add("hover-side");
+        h1.innerHTML = "";
+
+        parts.forEach((part) => {
+          if (part.toLowerCase().includes("<br")) {
+            h1.appendChild(document.createElement("br"));
+          } else {
+            part.split(" ").forEach((word, wIndex, arr) => {
+              const wordSpan = document.createElement("span");
+              wordSpan.style.display = "inline-block";
+
+              [...word].forEach((char) => {
+                const charSpan = document.createElement("span");
+                charSpan.textContent = char;
+                wordSpan.appendChild(charSpan);
+              });
+
+              h1.appendChild(wordSpan);
+
+              // add space after word (IMPORTANT)
+              if (wIndex < arr.length - 1) {
+                h1.appendChild(document.createTextNode(" "));
+              }
+            });
+          }
+        });
+
+        const spans = h1.querySelectorAll("span span");
+
+        spans.forEach((span, i) => {
+          span.addEventListener("mouseenter", () => {
+            spans.forEach((s) =>
+              s.classList.remove("hover-main", "hover-side"),
+            );
+            span.classList.add("hover-main");
+            if (spans[i - 1]) spans[i - 1].classList.add("hover-side");
+            if (spans[i + 1]) spans[i + 1].classList.add("hover-side");
+          });
+
+          span.addEventListener("mouseleave", () => {
+            spans.forEach((s) =>
+              s.classList.remove("hover-main", "hover-side"),
+            );
+          });
+        });
+      }
+
+      /* ── Floating Cards ── */
+      function animateCards() {
+        const cards = document.querySelectorAll(".dynamic-card");
+        let t = 0;
+        function loop() {
+          t += 0.025;
+          cards.forEach((c, i) => {
+            c.style.transform = `translateY(${Math.sin(t + i * 1.1) * 14}px)`;
+          });
+          requestAnimationFrame(loop);
+        }
+        loop();
+      }
+
+      /* ── Gradient BG ── */
+      function animateGradient() {
+        const root = document.documentElement;
+        let s = 0;
+        function tick() {
+          s += 0.015;
+          const r1 = Math.round(80 + 60 * Math.sin(s));
+          const g1 = Math.round(60 + 40 * Math.sin(s + 2));
+          const b1 = Math.round(180 + 60 * Math.sin(s + 4));
+          const r2 = Math.round(180 + 60 * Math.sin(s + 1));
+          const g2 = Math.round(60 + 40 * Math.sin(s + 3));
+          const b2 = Math.round(100 + 50 * Math.sin(s + 5));
+          root.style.setProperty("--color1", `${r1},${g1},${b1}`);
+          root.style.setProperty("--color2", `${r2},${g2},${b2}`);
+          requestAnimationFrame(tick);
+        }
+        tick();
+      }
+
+      /* ── Scroll Reveal ── */
+      function initReveal() {
+        const els = document.querySelectorAll(".reveal");
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("visible");
+              }
+            });
+          },
+          { threshold: 0.15 },
+        );
+        els.forEach((el) => io.observe(el));
+      }
+
+      /* ── Navbar blur on scroll ── */
+      function initNavScroll() {
+        const header = document.getElementById("site-header");
+        window.addEventListener("scroll", () => {
+          header.classList.toggle("scrolled", window.scrollY > 30);
+        });
+      }
+
+      /* ── Page transitions ── */
+      function initPageTransitions() {
+        const overlay = document.getElementById("transitionOverlay");
+        if (!overlay) return;
+        document.querySelectorAll(".viewmore").forEach((btn) => {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            const href = this.closest("a")?.getAttribute("href");
+            if (!href) return;
+            overlay.classList.add("active");
+            setTimeout(() => {
+              window.location.href = href;
+            }, 900);
+          });
+        });
+        window.addEventListener("pageshow", () =>
+          overlay.classList.remove("active"),
+        );
+        setTimeout(() => overlay.classList.remove("active"), 2000);
+      }
+
+      /* ── Mobile Menu ── */
+      function toggleMenu() {
+        document.getElementById("nav-menu")?.classList.toggle("active");
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        initAnimatedHeading();
+        animateCards();
+        animateGradient();
+        initReveal();
+        initNavScroll();
+        initPageTransitions();
       });
-
-      span.addEventListener("mouseleave", () => {
-        spans.forEach(s => s.classList.remove("hover-main", "hover-side"));
-      });
-    });
-  }
-
-  // ===== Floating Cards =====
-  function animateCards() {
-    const cards = document.querySelectorAll(".dynamic-card");
-    let floatOffset = 0;
-
-    function animate() {
-      floatOffset += 0.03;
-      cards.forEach((card, i) => {
-        const offset = Math.sin(floatOffset + i) * 17;
-        card.style.transform = `translateY(${offset}px)`;
-      });
-      requestAnimationFrame(animate);
-    }
-
-    animate();
-  }
-
-  // ===== Gradient Background Animation =====
-  function animateGradientColors() {
-    const root = document.documentElement;
-    let step = 0;
-
-    function updateColors() {
-      step += 0.02;
-
-      const r1 = Math.round(128 + 127 * Math.sin(step));
-      const g1 = Math.round(128 + 127 * Math.sin(step + 2));
-      const b1 = Math.round(128 + 127 * Math.sin(step + 4));
-
-      const r2 = Math.round(128 + 127 * Math.sin(step + 1));
-      const g2 = Math.round(128 + 127 * Math.sin(step + 3));
-      const b2 = Math.round(128 + 127 * Math.sin(step + 5));
-
-      root.style.setProperty('--color1', `${r1}, ${g1}, ${b1}`);
-      root.style.setProperty('--color2', `${r2}, ${g2}, ${b2}`);
-
-      requestAnimationFrame(updateColors);
-    }
-
-    updateColors();
-  }
-
-  // ===== Transition Overlay Logic =====
-  function initPageTransitions() {
-    const overlay = document.getElementById('transitionOverlay');
-    const viewMoreBtns = document.querySelectorAll('.viewmore');
-
-    if (!overlay) return;
-
-    // Handle link clicks with overlay transition
-    viewMoreBtns.forEach(btn => {
-      btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        const href = this.parentElement.getAttribute('href');
-        overlay.classList.add('active');
-        setTimeout(() => {
-          window.location.href = href;
-        }, 1300);
-      });
-    });
-
-    // Hide overlay on page load or history nav
-    function hideOverlay() {
-      overlay.classList.remove('active');
-    }
-
-    window.addEventListener('pageshow', hideOverlay);
-
-    // Fallback timeout
-    setTimeout(hideOverlay, 2000);
-  }
-
-  // ===== Mobile Menu Toggle =====
-  function toggleMenu() {
-    const navMenu = document.getElementById("nav-menu");
-    if (navMenu) navMenu.classList.toggle("active");
-  }
-
-  // ===== Initialize All =====
-  document.addEventListener("DOMContentLoaded", () => {
-    initAnimatedHeading();
-    animateCards();
-    animateGradientColors();
-    initPageTransitions();
-  });
-</script>
-
-
-
-
-</body>
-
+    </script>
+  </body>
 </html>
-
-
-
