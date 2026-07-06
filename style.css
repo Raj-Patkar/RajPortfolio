@@ -1030,3 +1030,151 @@ a { text-decoration: none; }
   margin: 0 auto;
   position: relative;
 }
+
+
+
+/* ============================================================
+   PROJECTS PAGE — STACKED 2-COLUMN CARD LAYOUT (projects.html only)
+   Left column (image) = 30% width
+   Right column (info) = 60% width
+   Does not affect .experience-card / .experience-cards used on experience.html
+   ============================================================ */
+
+.projects-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-card {
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--card-shadow);
+  padding: 2.2rem;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top left, rgba(124,111,247,0.10), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: var(--radius-lg);
+  pointer-events: none;
+}
+
+.project-card:hover {
+  border-color: rgba(124,111,247,0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.6),
+              0 0 40px rgba(124,111,247,0.15);
+}
+
+.project-card:hover::before { opacity: 1; }
+
+/* Left column — 30% width, image */
+.project-card-image {
+  flex: 0 0 30%;
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.project-card-image img,
+.project-card-image svg {
+  width: 100%;
+  height: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: brightness(0.9);
+}
+
+.project-card:hover .project-card-image img,
+.project-card:hover .project-card-image svg {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+/* Right column — 60% width, info + button */
+.project-card-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-card-info h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.project-card-info h4 {
+  font-size: 0.9rem;
+  color: var(--accent-1);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.project-card-info p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.project-card-info .btn {
+  align-self: flex-start;
+}
+
+/* Responsive: stack image on top, info below, full width */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    padding: 1.6rem;
+    gap: 20px;
+  }
+
+  .project-card-image,
+  .project-card-info {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .project-card-image img,
+  .project-card-image svg {
+    max-height: 160px;
+  }
+
+  .project-card-info {
+    text-align: center;
+    align-items: center;
+  }
+
+  .project-card-info .btn {
+    align-self: center;
+  }
+}
